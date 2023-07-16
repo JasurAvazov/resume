@@ -1,1 +1,89 @@
-// Шапка
+.header{
+    width: 100%;
+    background-color: rgba(165, 105, 71, 0.459);
+    // opacity: .5;
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    .container{
+        padding: 18px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        color: white;
+        font-size: 32px;
+        img{
+            max-width: 180px;
+        }
+    }
+    &__nav{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        gap: 40px;
+        a{
+            font-size: 20px;
+            color: white;
+            position: relative;
+            font-weight: 700;
+            text-shadow: 5px 3px #e6e2aa79;
+            transition: .3s all;
+            // &::after{
+            //     content: '';
+            //     display: block;
+            //     position: absolute;
+            //     bottom: -3px;
+            //     left: -10%;
+            //     width: 0;
+            //     height: 2px;
+            //     background-color: white;
+            //     transition: .3s all;
+            // }
+            &:hover{
+                // &::after{
+                //     width: 120%;
+                //     left: auto;
+                //     right: -10%;
+                // }
+                transform: translate(-50px, -20px);
+                text-shadow: 8px 6px #573A3A;
+            }
+        }
+    }
+    &__links{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        a{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                svg{
+                    path{
+                        fill: white;
+                    }
+                }
+            }
+        }
+        svg{
+            width: 20px;
+            height: 20px;
+            path{
+                fill: #573A3A;
+                transition: .3s all;
+            }
+        }
+    }
+}

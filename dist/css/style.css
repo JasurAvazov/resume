@@ -150,6 +150,119 @@
   padding-left: 15px;
 }
 
+.header {
+  width: 100%;
+  background-color: rgba(165, 105, 71, 0.459);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header .container {
+  padding: 18px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  color: white;
+  font-size: 32px;
+}
+
+.header__logo img {
+  max-width: 180px;
+}
+
+.header__nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  gap: 40px;
+}
+
+.header__nav a {
+  font-size: 20px;
+  color: white;
+  position: relative;
+  font-weight: 700;
+  text-shadow: 5px 3px rgba(230, 226, 170, 0.4745098039);
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.header__nav a:hover {
+  -webkit-transform: translate(-50px, -20px);
+      -ms-transform: translate(-50px, -20px);
+          transform: translate(-50px, -20px);
+  text-shadow: 8px 6px #573A3A;
+}
+
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.header__links a {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__links a:hover svg path {
+  fill: white;
+}
+
+.header__links svg {
+  width: 20px;
+  height: 20px;
+}
+
+.header__links svg path {
+  fill: #573A3A;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -194,6 +307,7 @@ button {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 ul {

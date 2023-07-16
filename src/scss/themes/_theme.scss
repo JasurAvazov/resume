@@ -1,36 +1,82 @@
 // Тема по умолчанию
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-    font-family: 'Montserrat', sans-serif;
-    &:focus,
-    &:active{
-        outline: none;
-    }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+	font-family: "Montserrat", sans-serif;
+	// cursor: none !important;
+	&:focus,
+	&:active {
+		outline: none;
+	}
 }
 html,
-body{
-    height: 100%;
-}
-.wrapper{
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    .main{
-        flex: 1 1 auto;
+body {
+	height: 100%;
+	background: url("../img/noise.png"), white;
+	scroll-behavior: smooth;
+	overscroll-behavior: none;
+    &::-webkit-scrollbar{
+        width: 10px;
+        background-color: white;
+        &-thumb{
+            background-color: #a5694775;
+        }
     }
 }
-button{
-    background: none;
-    border: none;
-    cursor: pointer;
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	.main {
+		flex: 1 1 auto;
+	}
 }
-a{
-    color: inherit;
-    text-decoration: none;
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
 }
-ul{
-    list-style-type: none;
+a {
+	color: inherit;
+	text-decoration: none;
 }
+ul {
+	list-style-type: none;
+}
+// .custom-cursor {
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	width: 25px;
+// 	height: 25px;
+//     background-color: #5eff0075;
+// 	border-radius: 50%;
+// 	pointer-events: none;
+// 	z-index: 9999;
+//     will-change: transform;
+//     &::after{
+//         content: '';
+//         display: block;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 25px;
+//         height: 25px;
+//         background-color: #aafc7b75;
+//         border-radius: 50%;
+//         animation: cursor 1s infinite;
+//         will-change: transform;
+//     }
+// }
+// @keyframes cursor {
+//     0%{
+//         transform: scale(1);
+//         opacity: 1;
+//     }
+//     100%{
+//         transform: scale(4);
+//         opacity: 0;
+//     }
+// }

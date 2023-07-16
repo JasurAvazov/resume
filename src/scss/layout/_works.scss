@@ -1,0 +1,49 @@
+.works{
+    overflow-x: hidden;
+    .container{
+        padding: 120px 15px 100px;
+    }
+    &-title{
+        width: max-content;
+        font-size: 64px;
+        color: #ade05b;
+        margin: 0px 10% 30px;
+        padding: 5px 10px;
+        text-align: center;
+        border: 5px solid #ade05b;
+    }
+    .swiper{
+        width: 80%;
+        aspect-ratio: 16/9;
+        overflow: visible;
+        &-slide{
+            width: 100%;
+            height: 100%;
+            will-change: transform;
+            position: relative;
+            padding: 20px 10px 40px;
+            background-color: black;
+            transform: scale(0.5);
+            transition: 0.3s transform;
+            &-active{
+                transform: scale(1);
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &-window{
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        &::-webkit-scrollbar{
+            width: 10px;
+            height: 100%;
+            background-color: white;
+            &-thumb{
+                background-color: rgb(216, 216, 216);
+            }
+        }
+    }
+}

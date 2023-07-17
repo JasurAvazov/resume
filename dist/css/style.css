@@ -889,11 +889,9 @@ button.swiper-pagination-bullet {
   width: -moz-max-content;
   width: max-content;
   font-size: 64px;
-  color: #ade05b;
+  color: #e0975b;
   margin: 0px 10% 30px;
-  padding: 5px 10px;
   text-align: center;
-  border: 5px solid #ade05b;
 }
 
 .works .swiper {
@@ -908,7 +906,7 @@ button.swiper-pagination-bullet {
   will-change: transform;
   position: relative;
   padding: 20px 10px 40px;
-  background-color: black;
+  background-color: #414242;
   -webkit-transform: scale(0.5);
       -ms-transform: scale(0.5);
           transform: scale(0.5);
@@ -917,6 +915,8 @@ button.swiper-pagination-bullet {
   -o-transition: 0.3s transform;
   transition: 0.3s transform;
   transition: 0.3s transform, 0.3s -webkit-transform;
+  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .works .swiper-slide-active {
@@ -926,6 +926,7 @@ button.swiper-pagination-bullet {
 }
 
 .works .swiper-slide img {
+  margin-top: 50px;
   width: 100%;
 }
 
@@ -943,6 +944,53 @@ button.swiper-pagination-bullet {
 
 .works-window::-webkit-scrollbar-thumb {
   background-color: #d8d8d8;
+}
+
+.works-window .tab {
+  padding: 10px 20px;
+  width: calc(100% - 30px);
+  height: 50px;
+  background-color: #d8d8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+.works-window .tab .dots {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.works-window .tab .dots:nth-child(1) {
+  background-color: #f86158;
+}
+
+.works-window .tab .dots:nth-child(2) {
+  background-color: #fcc02a;
+}
+
+.works-window .tab .dots:nth-child(3) {
+  background-color: #25cd3e;
+  margin-right: 20px;
+}
+
+.works-window .tab a {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: calc(100% - 100px);
 }
 
 * {

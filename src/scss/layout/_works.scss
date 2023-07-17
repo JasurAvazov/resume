@@ -6,11 +6,9 @@
     &-title{
         width: max-content;
         font-size: 64px;
-        color: #ade05b;
+        color: #e0975b;
         margin: 0px 10% 30px;
-        padding: 5px 10px;
         text-align: center;
-        border: 5px solid #ade05b;
     }
     .swiper{
         width: 80%;
@@ -22,13 +20,16 @@
             will-change: transform;
             position: relative;
             padding: 20px 10px 40px;
-            background-color: black;
+            background-color: #414242;
             transform: scale(0.5);
             transition: 0.3s transform;
+            border-radius: 10px;
+            border-radius: 20px;
             &-active{
                 transform: scale(1);
             }
             img{
+                margin-top: 50px;
                 width: 100%;
             }
         }
@@ -43,6 +44,41 @@
             background-color: white;
             &-thumb{
                 background-color: rgb(216, 216, 216);
+            }
+        }
+        .tab{
+            padding: 10px 20px;
+            width: calc(100% - 30px);
+            height: 50px;
+            background-color: rgb(216, 216, 216);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            .dots{
+                width: 20px;
+                height: 20px;
+                border-radius: 10px;
+                margin-right: 10px;
+                cursor: pointer;
+                &:nth-child(1){
+                    background-color: #f86158;
+                }
+                &:nth-child(2){
+                    background-color: #fcc02a;
+                }
+                &:nth-child(3){
+                    background-color: #25cd3e;
+                    margin-right: 20px;
+                }
+            }
+            a{
+                background-color: white;
+                padding: 5px 10px;
+                border-radius: 5px;
+                width: calc(100% - 100px);
             }
         }
     }

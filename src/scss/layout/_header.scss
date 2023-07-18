@@ -58,13 +58,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            &:hover{
-                svg{
-                    path{
-                        fill: white;
-                    }
-                }
-            }
         }
         svg{
             width: 20px;

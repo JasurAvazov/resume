@@ -1,13 +1,14 @@
 .works{
     overflow-x: hidden;
+	background: url("../img/noise.png"), rgb(226, 233, 238);
     .container{
-        padding: 120px 15px 100px;
+        padding: 100px 15px 100px;
     }
     &-title{
         width: max-content;
         font-size: 64px;
-        color: #e0975b;
-        margin: 0px 10% 30px;
+        color: #573a3a;
+        margin: 0px 10% 60px;
         text-align: center;
     }
     .swiper{
@@ -74,11 +75,19 @@
                     margin-right: 20px;
                 }
             }
-            a{
+            .path{
                 background-color: white;
                 padding: 5px 10px;
-                border-radius: 5px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                overflow: hidden;
                 width: calc(100% - 100px);
+                border-radius: 5px;
+                a{
+                    white-space: nowrap;
+                    font-size: 14px;
+                }
             }
         }
     }

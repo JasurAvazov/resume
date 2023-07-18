@@ -860,10 +860,6 @@ button.swiper-pagination-bullet {
           align-items: center;
 }
 
-.header__links a:hover svg path {
-  fill: white;
-}
-
 .header__links svg {
   width: 20px;
   height: 20px;
@@ -876,12 +872,158 @@ button.swiper-pagination-bullet {
   transition: 0.3s all;
 }
 
+.no-webp .about {
+  background: url("../img/noise.png"), white; }
+
+.about .container {
+  padding: 160px 15px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__inner {
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.about__img {
+  width: calc(100% - 800px);
+  min-width: 200px;
+  max-width: 400px;
+  aspect-ratio: 1/1;
+}
+
+.about__img .flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  border-radius: 50%;
+}
+
+.about__img .flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.about__img .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  -o-transition: transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.about__img .flip-card-front,
+.about__img .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.about__img .flip-card-front img,
+.about__img .flip-card-back img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about__img .flip-card-front img:last-child,
+.about__img .flip-card-back img:last-child {
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #a5694775;
+}
+
+.about__img .flip-card-back {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.about-title {
+  color: #573a3a;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.about-title span {
+  color: #2fc72f;
+}
+
+.about-text {
+  color: #573a3a;
+  font-size: 22px;
+  margin-bottom: 60px;
+  line-height: 150%;
+}
+
+.about-text span {
+  color: #2ab92a;
+}
+
+.about__skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+
+.about__skills img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.no-webp .works {
+  background: url("../img/noise.png"), #e2e9ee; }
+
 .works {
   overflow-x: hidden;
 }
 
 .works .container {
-  padding: 120px 15px 100px;
+  padding: 100px 15px 100px;
 }
 
 .works-title {
@@ -889,8 +1031,8 @@ button.swiper-pagination-bullet {
   width: -moz-max-content;
   width: max-content;
   font-size: 64px;
-  color: #e0975b;
-  margin: 0px 10% 30px;
+  color: #573a3a;
+  margin: 0px 10% 60px;
   text-align: center;
 }
 
@@ -986,11 +1128,26 @@ button.swiper-pagination-bullet {
   margin-right: 20px;
 }
 
-.works-window .tab a {
+.works-window .tab .path {
   background-color: white;
   padding: 5px 10px;
-  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
   width: calc(100% - 100px);
+  border-radius: 5px;
+}
+
+.works-window .tab .path a {
+  white-space: nowrap;
+  font-size: 14px;
 }
 
 * {
@@ -1090,5 +1247,9 @@ ul {
     max-width: 1320px;
   }
 }
+
+.webp .about { background: url(../img/noise.webp), white; }
+
+.webp .works { background: url(../img/noise.webp), #e2e9ee; }
 
 .webp html, .webp body { background: url(../img/noise.webp), white; }

@@ -24,6 +24,7 @@
             height: 100%;
 			perspective: 1000px;
             border-radius: 50%;
+            will-change: transform;
             &:hover .flip-card-inner {
                 transform: rotateY(-180deg);
             }
@@ -32,8 +33,9 @@
                 width: 100%;
                 height: 100%;
                 text-align: center;
-                transition: transform 0.6s;
+                transition: transform 0.5s;
                 transform-style: preserve-3d;
+                will-change: transform;
             }
             &-front,
 		    &-back {
@@ -44,6 +46,7 @@
                 backface-visibility: hidden;
                 border-radius: 50%;
                 overflow: hidden;
+                will-change: transform;
                 img {
                     width: 100%;
                     height: 100%;

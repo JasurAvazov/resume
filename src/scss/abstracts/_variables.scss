@@ -16,3 +16,8 @@ $z-indexes: (
     }
     @return map-get($z-indexes, $layer);
 } 
+
+:root{
+    --primal-text-color: #573a3a;
+    --primal-border-color: #6b5c5c;
+}

@@ -53,7 +53,7 @@
                     object-fit: cover;
                     &:last-child{
                         object-fit: contain;
-                        background-color: #a5694775;
+                        background-color: #dbcfc975;
                     }
                 }
 		    }
@@ -63,7 +63,7 @@
 		}
 	}
 	&-title {
-		color: #573a3a;
+		color: var(--primal-text-color);
 		font-size: 34px;
 		margin-bottom: 40px;
         span{
@@ -71,7 +71,7 @@
         }
 	}
 	&-text {
-		color: #573a3a;
+		color: var(--primal-text-color);
 		font-size: 22px;
 		margin-bottom: 60px;
         line-height: 150%;

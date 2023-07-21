@@ -1052,12 +1052,12 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 60px;
+  gap: 0px;
 }
 
 .experience__items-card {
   width: 100%;
-  border-top: 1px dashed var(--primal-border-color);
+  border-top: 0px dashed var(--primal-border-color);
   border-bottom: 1px dashed var(--primal-border-color);
   padding: 40px 0;
   display: -webkit-box;
@@ -1073,6 +1073,10 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.experience__items-card:first-child {
+  border-top: 1px dashed var(--primal-border-color);
 }
 
 .experience__items-text {

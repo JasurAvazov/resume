@@ -1,1 +1,29 @@
-// Футер
+.footer{
+    background-color: #010318;
+    color: white;
+    .container{
+        padding: 120px 15px 160px;
+    }
+    &__nav{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        ul{
+            width: calc(100% / 3);
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 16px;
+            .title{
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+            a{
+
+            }
+        }
+    }
+}

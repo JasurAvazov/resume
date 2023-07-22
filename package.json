@@ -43,6 +43,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "smoothscroll-for-websites": "^1.4.10",
     "swiper": "^10.0.4"
   }
 }

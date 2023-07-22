@@ -1,3 +1,12 @@
+include components/preloader
+include components/cursor
+include components/header
+include components/about 
+include components/experience
+include components/works
+include components/alert
+include components/footer
+
 doctype html
 html(lang="en")
     head
@@ -5,21 +14,16 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/style.min.css")
+        link(rel="preload" as="image" href="@img/preloader.gif")
         title Avazov Jasur
     body 
-        .custom-cursor
-        .custom-second-cursor
+        +preloader
+        +cursor
         .wrapper 
-            include components/header 
-            +header 
-            include components/about 
-            +about
-            include components/experience 
-            +experience
-            include components/works 
-            +works 
-            include components/alert 
-            +alert
-            include components/footer 
+            +header  
+            +about 
+            +experience 
+            +works  
+            +alert 
             +footer
         script(src="js/app.min.js") 

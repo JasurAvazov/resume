@@ -4,37 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230722044131">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230722055707">
+    <link rel="preload" as="image" href="img/preloader.gif">
     <title>Avazov Jasur</title>
   </head>
   <body> 
+    <div class="preloader"> 
+      <div class="scene">
+        <div class="cube-wrapper">
+          <div class="cube">
+            <div class="cube-faces">
+              <div class="cube-face shadow"></div>
+              <div class="cube-face bottom"></div>
+              <div class="cube-face top"></div>
+              <div class="cube-face left"></div>
+              <div class="cube-face right"></div>
+              <div class="cube-face back"></div>
+              <div class="cube-face front"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="custom-cursor"></div>
     <div class="custom-second-cursor"></div>
     <div class="wrapper"> 
-            <header class="header"> 
-              <div class="container"> <a class="header__logo" href="#"> <img src="img/logo.svg" alt="" draggable="false"></a>
-                <ul class="header__nav">
-                  <li><a href="#about">About </a></li>
-                  <li><a href="#experience">Experience </a></li>
-                  <li><a href="#works">Works </a></li>
-                  <li><a href="#">Games </a></li>
-                  <li><a href="#contacts">Contacts </a></li>
-                </ul>
-                <ul class="header__links"> 
-                  <li> <a href="#"><svg width="132" height="116" viewBox="0 0 132 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <header class="header"> 
+        <div class="container"> <a class="header__logo" href="#"> <img src="img/logo.svg" alt="" draggable="false"/></a>
+          <ul class="header__nav">
+            <li><a href="#about">About </a></li>
+            <li><a href="#experience">Experience </a></li>
+            <li><a href="#works">Works </a></li>
+            <li><a href="#">Games </a></li>
+            <li><a href="#contacts">Contacts </a></li>
+          </ul>
+          <ul class="header__links"> 
+            <li> <a href="#"><svg width="132" height="116" viewBox="0 0 132 116" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M88.6801 8.58763L45.9147 23.4885L7.40514 36.9065C0.815301 39.2026 0.294855 48.3134 6.5891 51.3549L54.5365 74.523C62.2191 78.2353 71.4861 75.0064 75.1984 67.3237L84.0094 49.089L98.3666 19.3765C101.339 13.1062 95.2699 6.29151 88.6801 8.58763Z" fill="#573A3A"/>
 <path d="M105.68 2.58763L62.9147 17.4885L24.4051 30.9065C17.8153 33.2026 17.2949 42.3134 23.5891 45.3549L71.5365 68.523C79.2191 72.2353 88.4861 69.0064 92.1984 61.3237L101.009 43.089L115.367 13.3765C118.339 7.10617 112.27 0.29151 105.68 2.58763Z" fill="#573A3A"/>
 <path d="M70.7827 108.514L89.6439 67.342L106.628 30.2668C109.534 23.9224 103.322 17.2384 96.7688 19.6736L46.8532 38.2247C38.8552 41.1971 34.7681 50.1189 37.7405 58.117L44.7956 77.1003L56.2914 108.033C58.757 114.519 67.8764 114.859 70.7827 108.514Z" fill="#573A3A"/>
 </svg></a></li>
-                  <li> <a href="#"><svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <li> <a href="#"><svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M53.8733 24.0781C50.4901 24.0665 47.1379 24.7221 44.0084 26.0074C40.8789 27.2927 38.0335 29.1824 35.6351 31.5685C33.2367 33.9546 31.3324 36.7902 30.031 39.9131C28.7296 43.036 28.0568 46.3848 28.051 49.7679V75.7226C28.051 76.7762 28.4696 77.7867 29.2146 78.5317C29.9596 79.2767 30.9701 79.6953 32.0237 79.6953H41.2932C42.3468 79.6953 43.3573 79.2767 44.1023 78.5317C44.8473 77.7867 45.2659 76.7762 45.2659 75.7226V49.7679C45.265 48.5647 45.5177 47.3747 46.0076 46.2757C46.4974 45.1766 47.2134 44.1932 48.1088 43.3894C49.0042 42.5856 50.059 41.9795 51.2043 41.6107C52.3497 41.2419 53.5599 41.1185 54.7561 41.2488C56.9014 41.519 58.8729 42.5671 60.2967 44.1944C61.7205 45.8216 62.4977 47.9148 62.4807 50.0769V75.7226C62.4807 76.7762 62.8993 77.7867 63.6443 78.5317C64.3893 79.2767 65.3998 79.6953 66.4534 79.6953H75.7229C76.7765 79.6953 77.787 79.2767 78.532 78.5317C79.277 77.7867 79.6956 76.7762 79.6956 75.7226V49.7679C79.6898 46.3848 79.0169 43.036 77.7156 39.9131C76.4142 36.7902 74.5098 33.9546 72.1114 31.5685C69.713 29.1824 66.8677 27.2927 63.7382 26.0074C60.6087 24.7221 57.2564 24.0665 53.8733 24.0781Z" fill="#231F20"/>
 <path d="M16.1328 28.0508H4.21484C2.02081 28.0508 0.242188 29.8294 0.242188 32.0234V75.7227C0.242188 77.9167 2.02081 79.6953 4.21484 79.6953H16.1328C18.3268 79.6953 20.1055 77.9167 20.1055 75.7227V32.0234C20.1055 29.8294 18.3268 28.0508 16.1328 28.0508Z" fill="#231F20"/>
 <path d="M10.1738 20.1055C15.6589 20.1055 20.1055 15.6589 20.1055 10.1738C20.1055 4.68873 15.6589 0.242188 10.1738 0.242188C4.68873 0.242188 0.242188 4.68873 0.242188 10.1738C0.242188 15.6589 4.68873 20.1055 10.1738 20.1055Z" fill="#231F20"/>
 </svg></a></li>
-                  <li> <a href="https://www.instagram.com/web_100101100/"><svg width="293" height="300" viewBox="0 0 293 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <li> <a href="https://www.instagram.com/web_100101100/"><svg width="293" height="300" viewBox="0 0 293 300" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M207.987 0H85.1589C31.8063 0 0 32.55 0 87.15V212.7C0 267.45 31.8063 300 85.1589 300H207.841C261.193 300 292.999 267.45 292.999 212.85V87.15C293.146 32.55 261.34 0 207.987 0ZM146.573 208.2C115.206 208.2 89.7027 182.1 89.7027 150C89.7027 117.9 115.206 91.8 146.573 91.8C177.94 91.8 203.443 117.9 203.443 150C203.443 182.1 177.94 208.2 146.573 208.2ZM233.344 73.2C232.611 75 231.585 76.65 230.266 78.15C228.8 79.5 227.188 80.55 225.429 81.3C223.67 82.05 221.765 82.5 219.86 82.5C215.902 82.5 212.238 81 209.453 78.15C208.134 76.65 207.108 75 206.375 73.2C205.642 71.4 205.202 69.45 205.202 67.5C205.202 65.55 205.642 63.6 206.375 61.8C207.108 59.85 208.134 58.35 209.453 56.85C212.824 53.4 217.954 51.75 222.644 52.8C223.67 52.95 224.55 53.25 225.429 53.7C226.309 54 227.188 54.45 228.068 55.05C228.801 55.5 229.533 56.25 230.266 56.85C231.585 58.35 232.611 59.85 233.344 61.8C234.077 63.6 234.517 65.55 234.517 67.5C234.517 69.45 234.077 71.4 233.344 73.2Z" fill="#231F20"/>
 </svg></a></li>
-                  <li> <a href="https://www.instagram.com/web_100101100/"><svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <li> <a href="https://www.instagram.com/web_100101100/"><svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect width="360" height="360" fill="url(#pattern0)"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -43,147 +61,147 @@
 <image id="image0_215_53" width="360" height="360" xlink:href="data:image/png;base64,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"/>
 </defs>
 </svg></a></li>
-                </ul>
+          </ul>
+        </div>
+      </header>
+      <section class="about" id="about">
+        <div class="container"> 
+          <div class="about__inner">
+            <h1 class="about-title">Hello, I'm Avazov Jasur.</h1>
+            <p class="about-text">
+              I am an 18 year old man with <span>2 years of experience</span> who is passionate about <span>creative work</span> and <span>loves to learn</span>. I have experience of <span>working in teams</span> and consider myself a <span>full stack programmer</span>. In addition, I speak Russian, Uzbek and English.<br /><br />  On my portfolio website, I will showcase my work and provide insights into my skills and achievements. Stay tuned for updates and feel free to explore my projects and get to know me better.</p>
+            <ul class="about__skills"> 
+              <li> <picture><source srcset="img/skills/html.webp" type="image/webp"><img src="img/skills/html.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/css.webp" type="image/webp"><img src="img/skills/css.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/js.webp" type="image/webp"><img src="img/skills/js.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/pug.webp" type="image/webp"><img src="img/skills/pug.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/sass.webp" type="image/webp"><img src="img/skills/sass.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/gsap.webp" type="image/webp"><img src="img/skills/gsap.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/gulp.webp" type="image/webp"><img src="img/skills/gulp.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/webpack.webp" type="image/webp"><img src="img/skills/webpack.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/go.webp" type="image/webp"><img src="img/skills/go.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/python.webp" type="image/webp"><img src="img/skills/python.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/react.webp" type="image/webp"><img src="img/skills/react.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/nextjs.webp" type="image/webp"><img src="img/skills/nextjs.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/vue.webp" type="image/webp"><img src="img/skills/vue.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/nuxtjs.webp" type="image/webp"><img src="img/skills/nuxtjs.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/bb.webp" type="image/webp"><img src="img/skills/bb.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/gitlab.webp" type="image/webp"><img src="img/skills/gitlab.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/github.webp" type="image/webp"><img src="img/skills/github.png" alt="" draggable="false"/></picture></li>
+              <li> <picture><source srcset="img/skills/jira.webp" type="image/webp"><img src="img/skills/jira.png" alt="" draggable="false"/></picture></li>
+            </ul>
+          </div>
+          <div class="about__img"> 
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front"><picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.png" alt="" draggable="false"/></picture></div>
+                <div class="flip-card-back"><picture><source srcset="img/avatar-anim.webp" type="image/webp"><img src="img/avatar-anim.png" alt="" draggable="false"/></picture></div>
               </div>
-            </header>
-            <section class="about" id="about">
-              <div class="container"> 
-                <div class="about__inner">
-                  <h1 class="about-title">Hello, I'm Avazov Jasur.</h1>
-                  <p class="about-text">
-                    I am an 18 year old man with <span>2 years of experience</span> who is passionate about <span>creative work</span> and <span>loves to learn</span>. I have experience of <span>working in teams</span> and consider myself a <span>full stack programmer</span>. In addition, I speak Russian, Uzbek and English.<br /><br />  On my portfolio website, I will showcase my work and provide insights into my skills and achievements. Stay tuned for updates and feel free to explore my projects and get to know me better.</p>
-                  <ul class="about__skills"> 
-                    <li> <picture><source srcset="img/skills/html.webp" type="image/webp"><img src="img/skills/html.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/css.webp" type="image/webp"><img src="img/skills/css.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/js.webp" type="image/webp"><img src="img/skills/js.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/pug.webp" type="image/webp"><img src="img/skills/pug.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/sass.webp" type="image/webp"><img src="img/skills/sass.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/gsap.webp" type="image/webp"><img src="img/skills/gsap.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/gulp.webp" type="image/webp"><img src="img/skills/gulp.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/webpack.webp" type="image/webp"><img src="img/skills/webpack.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/go.webp" type="image/webp"><img src="img/skills/go.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/python.webp" type="image/webp"><img src="img/skills/python.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/react.webp" type="image/webp"><img src="img/skills/react.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/nextjs.webp" type="image/webp"><img src="img/skills/nextjs.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/vue.webp" type="image/webp"><img src="img/skills/vue.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/nuxtjs.webp" type="image/webp"><img src="img/skills/nuxtjs.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/bb.webp" type="image/webp"><img src="img/skills/bb.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/gitlab.webp" type="image/webp"><img src="img/skills/gitlab.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/github.webp" type="image/webp"><img src="img/skills/github.png" alt="" draggable="false"></picture></li>
-                    <li> <picture><source srcset="img/skills/jira.webp" type="image/webp"><img src="img/skills/jira.png" alt="" draggable="false"></picture></li>
-                  </ul>
-                </div>
-                <div class="about__img"> 
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front"><picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.png" alt="" draggable="false"></picture></div>
-                      <div class="flip-card-back"><picture><source srcset="img/avatar-anim.webp" type="image/webp"><img src="img/avatar-anim.png" alt="" draggable="false"></picture></div>
-                    </div>
-                  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="experience" id="experience">
+        <div class="container">
+          <h2 class="experience-title">Experience</h2>
+          <div class="experience__items">
+            <div class="experience__items-card">
+              <h3 class="experience__items-title">Freelance</h3>
+              <h5 class="experience__items-subtitle">Front-end Developer</h5>
+              <p class="experience__items-text"><span>experience:</span> 01.08.2020 - until now</p>
+              <p class="experience__items-text"><span>working stack:</span> gsap, gulp, webpack, swiperjs, animejs, pug, sass, js, vue, nuxt, php, drupal, react, nextjs</p>
+              <p class="experience__items-text"><span>responsibilities:</span> there are always different tasks, but basically it's layout according to the layout in Figma</p>
+            </div>
+            <div class="experience__items-card">
+              <h3 class="experience__items-title">Hamkorbank</h3>
+              <h5 class="experience__items-subtitle">Full-stack Developer</h5>
+              <p class="experience__items-text"><span>experience:</span> 01.10.2021 - 30.03.2022</p>
+              <p class="experience__items-text"><span>working stack:</span> Go, rabbitMQ, python, swagger, RestAPI</p>
+              <p class="experience__items-text"><span>responsibilities:</span> made and updated microservices or added new features, refactored the code. wrote a crud for the front part.</p>
+            </div>
+            <div class="experience__items-card">
+              <h3 class="experience__items-title">AxCapital</h3>
+              <h5 class="experience__items-subtitle">Front-end Developer</h5>
+              <p class="experience__items-text"><span>experience:</span> 28.11.2022 - 30.03.2023</p>
+              <p class="experience__items-text"><span>working stack:</span> gsap, gulp, webpack, swiperjs, animejs, pug, sass, js, vue, nuxt, php, drupal</p>
+              <p class="experience__items-text"><span>responsibilities:</span> made cool and beautiful websites and templates for selling skyscrapers. I mainly worked with the designer, he gave me the design, I made up the layout, added the admin panel and uploaded it to the hosting. sometimes I got big sites that I did with 2-10 people.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="works" id="works"> 
+        <div class="container"> 
+          <h2 class="works-title">Works</h2>
+          <div class="swiper works-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> 
+                <div class="works-window">
+                  <div class="tab">
+                    <div class="dots"></div>
+                    <div class="dots"></div>
+                    <div class="dots"></div>
+                    <div class="path"><a href="https://jasuravazov.github.io/modern-generation-streaming/dist/index.html" target="_blank">https://jasuravazov.github.io/modern-generation-streaming/dist/index.html</a></div>
+                  </div><picture><source srcset="img/works/mgs.webp" type="image/webp"><img src="img/works/mgs.png" alt="" draggable="false"/></picture>
                 </div>
               </div>
-            </section>
-            <div class="experience" id="experience">
-              <div class="container">
-                <h2 class="experience-title">Experience</h2>
-                <div class="experience__items">
-                  <div class="experience__items-card">
-                    <h3 class="experience__items-title">Freelance</h3>
-                    <h5 class="experience__items-subtitle">Front-end Developer</h5>
-                    <p class="experience__items-text"><span>experience:</span> 01.08.2020 - until now</p>
-                    <p class="experience__items-text"><span>working stack:</span> gsap, gulp, webpack, swiperjs, animejs, pug, sass, js, vue, nuxt, php, drupal, react, nextjs</p>
-                    <p class="experience__items-text"><span>responsibilities:</span> there are always different tasks, but basically it's layout according to the layout in Figma</p>
-                  </div>
-                  <div class="experience__items-card">
-                    <h3 class="experience__items-title">Hamkorbank</h3>
-                    <h5 class="experience__items-subtitle">Full-stack Developer</h5>
-                    <p class="experience__items-text"><span>experience:</span> 01.10.2021 - 30.03.2022</p>
-                    <p class="experience__items-text"><span>working stack:</span> Go, rabbitMQ, python, swagger, RestAPI</p>
-                    <p class="experience__items-text"><span>responsibilities:</span> made and updated microservices or added new features, refactored the code. wrote a crud for the front part.</p>
-                  </div>
-                  <div class="experience__items-card">
-                    <h3 class="experience__items-title">AxCapital</h3>
-                    <h5 class="experience__items-subtitle">Front-end Developer</h5>
-                    <p class="experience__items-text"><span>experience:</span> 28.11.2022 - 30.03.2023</p>
-                    <p class="experience__items-text"><span>working stack:</span> gsap, gulp, webpack, swiperjs, animejs, pug, sass, js, vue, nuxt, php, drupal</p>
-                    <p class="experience__items-text"><span>responsibilities:</span> made cool and beautiful websites and templates for selling skyscrapers. I mainly worked with the designer, he gave me the design, I made up the layout, added the admin panel and uploaded it to the hosting. sometimes I got big sites that I did with 2-10 people.</p>
-                  </div>
+              <div class="swiper-slide"> 
+                <div class="works-window">
+                  <div class="tab">
+                    <div class="dots"></div>
+                    <div class="dots"></div>
+                    <div class="dots"></div>
+                    <div class="path"><a href="https://jasuravazov.github.io/the-prime-meat/dist/index.html" target="_blank">https://jasuravazov.github.io/the-prime-meat/dist/index.html</a></div>
+                  </div><picture><source srcset="img/works/meat.webp" type="image/webp"><img src="img/works/meat.png" alt="" draggable="false"/></picture>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="works-window">
+                  <div class="tab">
+                    <div class="dots"></div>
+                    <div class="dots"></div>
+                    <div class="dots"></div>
+                    <div class="path"><a href="https://jasuravazov.github.io/modern-generation-streaming/dist/index.html" target="_blank">https://jasuravazov.github.io/modern-generation-streaming/dist/index.html</a></div>
+                  </div><picture><source srcset="img/works/mgs.webp" type="image/webp"><img src="img/works/mgs.png" alt="" draggable="false"/></picture>
                 </div>
               </div>
             </div>
-            <section class="works" id="works"> 
-              <div class="container"> 
-                <h2 class="works-title">Works</h2>
-                <div class="swiper works-swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide"> 
-                      <div class="works-window">
-                        <div class="tab">
-                          <div class="dots"></div>
-                          <div class="dots"></div>
-                          <div class="dots"></div>
-                          <div class="path"><a href="https://jasuravazov.github.io/modern-generation-streaming/dist/index.html" target="_blank">https://jasuravazov.github.io/modern-generation-streaming/dist/index.html</a></div>
-                        </div><picture><source srcset="img/works/mgs.webp" type="image/webp"><img src="img/works/mgs.png" alt="" draggable="false"></picture>
-                      </div>
-                    </div>
-                    <div class="swiper-slide"> 
-                      <div class="works-window">
-                        <div class="tab">
-                          <div class="dots"></div>
-                          <div class="dots"></div>
-                          <div class="dots"></div>
-                          <div class="path"><a href="https://jasuravazov.github.io/the-prime-meat/dist/index.html" target="_blank">https://jasuravazov.github.io/the-prime-meat/dist/index.html</a></div>
-                        </div><picture><source srcset="img/works/meat.webp" type="image/webp"><img src="img/works/meat.png" alt="" draggable="false"></picture>
-                      </div>
-                    </div>
-                    <div class="swiper-slide"> 
-                      <div class="works-window">
-                        <div class="tab">
-                          <div class="dots"></div>
-                          <div class="dots"></div>
-                          <div class="dots"></div>
-                          <div class="path"><a href="https://jasuravazov.github.io/modern-generation-streaming/dist/index.html" target="_blank">https://jasuravazov.github.io/modern-generation-streaming/dist/index.html</a></div>
-                        </div><picture><source srcset="img/works/mgs.webp" type="image/webp"><img src="img/works/mgs.png" alt="" draggable="false"></picture>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination works-swiper-pagination"></div>
-                </div>
-              </div>
-            </section>
-            <div class="alert active"> 
-              <div class="container"> 
-                <p>*our site is under construction</p>
-                <button class="close">ok, close</button>
-              </div>
-            </div>
-            <footer class="footer" id="contacts">  
-              <div class="footer__body container"> <a class="footer__logo" href="#"> <img src="img/logo.svg" alt="" draggable="false"></a>
-                <div class="footer__nav"> 
-                  <ul> 
-                    <li> 
-                      <p class="title">Navigation</p>
-                    </li>
-                    <li> <a href="#about">About</a></li>
-                    <li> <a href="#experience">Experience</a></li>
-                    <li> <a href="#works">Works</a></li>
-                    <li> <a href="#games">Games</a></li>
-                    <li> <a href="#">Top</a></li>
-                  </ul>
-                  <ul> 
-                    <li> 
-                      <p class="title">Contact</p>
-                    </li>
-                    <li> <a href="tel:+998971701340" target="_blank">+998 (97) 170-13-40</a></li>
-                    <li> <a href="tel:+998909331340" target="_blank">+998 (90) 933-13-40</a></li>
-                    <li> <a href="mailto:jasuravazov4@gmail.com" target="_blank">jasuravazov4@gmail.com</a></li>
-                    <li> <a href="https://www.instagram.com/web_100101100/" target="_blank">Instagram</a></li>
-                    <li> <a href="https://t.me/Avazov_Jasur" target="_blank">Telegram</a></li>
-                  </ul>
-                </div>
-              </div>
-            </footer>
+            <div class="swiper-pagination works-swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <div class="alert active"> 
+        <div class="container"> 
+          <p>*our site is under construction</p>
+          <button class="close">ok, close</button>
+        </div>
+      </div>
+      <footer class="footer" id="contacts">  
+        <div class="footer__body container"> <a class="footer__logo" href="#"> <img src="img/logo-white.svg" alt="" draggable="false"/></a>
+          <div class="footer__nav"> 
+            <ul> 
+              <li> 
+                <p class="title">Navigation</p>
+              </li>
+              <li> <a href="#about">About</a></li>
+              <li> <a href="#experience">Experience</a></li>
+              <li> <a href="#works">Works</a></li>
+              <li> <a href="#games">Games</a></li>
+              <li> <a href="#">Top</a></li>
+            </ul>
+            <ul> 
+              <li> 
+                <p class="title">Contact</p>
+              </li>
+              <li> <a href="tel:+998971701340" target="_blank">+998 (97) 170-13-40</a></li>
+              <li> <a href="tel:+998909331340" target="_blank">+998 (90) 933-13-40</a></li>
+              <li> <a href="mailto:jasuravazov4@gmail.com" target="_blank">jasuravazov4@gmail.com</a></li>
+              <li> <a href="https://www.instagram.com/web_100101100/" target="_blank">Instagram</a></li>
+              <li> <a href="https://t.me/Avazov_Jasur" target="_blank">Telegram</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
-    <script src="js/app.min.js?_v=20230722044131"> </script>
+    <script src="js/app.min.js?_v=20230722055707"> </script>
   </body>
 </html>

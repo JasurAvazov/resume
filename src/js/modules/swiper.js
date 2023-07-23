@@ -1,10 +1,11 @@
-import Swiper from 'swiper';
+import Swiper, { Navigation } from "swiper";
 
 export function init() {
-	const worksSwiper = new Swiper('.works-swiper', {
-        pagination: {
-            el: '.works-swiper-pagination',
-            clickable: true,
-        },
-    });
+    const works = new Swiper(".works-swiper", {
+		modules: [Navigation],
+		navigation: {
+			nextEl: ".works-swiper-button-next",
+			prevEl: ".works-swiper-button-prev",
+		},
+	});
 }

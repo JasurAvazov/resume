@@ -3,10 +3,6 @@
 // Шрифты
 @import "fonts";
 
-// swiper
-@import "../../node_modules/swiper/swiper.scss",
-        "../../node_modules/swiper/modules/pagination.scss";
-
 // abstracts
 @import 
     'abstracts/variables',
@@ -31,6 +27,10 @@
     'layout/works',
     'layout/alert',
     'layout/footer';
+
+// swiper
+@import "../../node_modules/swiper/swiper.scss",
+        "../../node_modules/swiper/modules/navigation/navigation.scss";
 
 // components
 @import 

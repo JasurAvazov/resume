@@ -3,6 +3,7 @@ import * as cursor from "./modules/cursor.js";
 import * as swiper from "./modules/swiper.js";
 import * as alerts from "./modules/alerts.js";
 import * as preloader from "./modules/preloader.js";
+
 import SmoothScroll from "smoothscroll-for-websites";
 
 SmoothScroll({
@@ -14,7 +15,7 @@ SmoothScroll({
 });
 
 functions.isWebp();
+preloader.init();
 swiper.init();
 cursor.init();
 alerts.init();
-preloader.init();

@@ -22,16 +22,30 @@
             position: relative;
             padding: 20px 10px 40px;
             background-color: #414242;
-            transform: scale(0.5);
+            transform: scale(0.5) !important;
             transition: 0.3s transform;
             border-radius: 10px;
             border-radius: 20px;
             &-active{
-                transform: scale(1);
+                transform: scale(1) !important;
             }
             img{
                 margin-top: 50px;
                 width: 100%;
+            }
+        }
+        &-button{
+            &-prev,&-next{
+                color: #573a3a;
+                &::after{
+                    font-size: 80px;
+                }
+            }
+            &-prev{
+                left: -100px;
+            }
+            &-next{
+                right: -100px;
             }
         }
     }

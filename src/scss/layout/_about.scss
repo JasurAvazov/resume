@@ -13,10 +13,9 @@
 		aspect-ratio: 1/1;
 		border-radius: 50%;
 		overflow: hidden;
-		background-color: transparent;
 		&:hover{
 			.about__img-bg{
-				transform: translateY(-100%);
+				box-shadow: inset 0 0 200px 200px #a5694775;
 			}
 		}
 		img{
@@ -29,11 +28,14 @@
 		}
 		&-bg{
 			width: 100%;
-			height: calc(100% + 20px);
-			background-color: #a5694775;
+			height: 100%;
+			// background-color: #a5694775;
 			z-index: -1;
-			transform: translateY(0);
-			transition: transform .3s;
+			transform: translateY(calc(-100% - 4px));
+			transition: box-shadow .3s;
+			box-shadow: inset 0 0 30px 0px #a5694775;
+			border-radius: 50%;
+			background-color: white;
 		}
 	}
 	&__inner {
